@@ -89,6 +89,10 @@ function handleClick(event) {
   
   const { target } = event;
 
+    if (target.nodeName !== 'IMG') {
+        return;
+  } 
+  
     if (event.target === event.currentTarget) {
         return;
     }
